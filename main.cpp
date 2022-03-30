@@ -62,7 +62,6 @@ int main(int argc, char** argv)
                         getColor(label), 1, 1, 0);
 
 
-
             Mat cropped_image = frame(cv::Rect(cv::Point(xmin, ymin), cv::Point(xmax, ymax)));
 
 
@@ -80,22 +79,7 @@ int main(int argc, char** argv)
         // imshow("Crayfish Detection", frame);
         if( waitKey(10) == 27 ) break; // stop capturing by pressing ESC 
 
-
-	    // for (const auto &r : face_results.rects) {
-        //     int x1 = r.x * frame.cols;
-        //     int y1 = r.y * frame.rows;
-        //     int x2 = x1 + (r.width * frame.cols);
-        //     int y2 = y1 + (r.height * frame.rows);
-        //   Point pt1(x1, y1);
-        //   // and its bottom right corner.
-        //   Point pt2(x2, y2);
-        //   cv::rectangle(frame, pt1, pt2, cv::Scalar(0, 255, 0));
-        // }
-
-        //   resize(frame, frame, Size(640,480));
-        //   imshow("this is you, smile! :)", frame);
-        //   if( waitKey(10) == 27 ) break; // stop capturing by pressing ESC 
-         
+      
     // the camera will be closed automatically upon exit
     // cap.close();
 }
