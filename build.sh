@@ -1,0 +1,1 @@
+g++ -std=c++17 -I. -o crayDetect ./main.cpp -lvitis_ai_library-yolov3 -lvitis_ai_library-classification -lvitis_ai_library-dpu_task -lvitis_ai_library-xnnpp -lvitis_ai_library-model_config -lvitis_ai_library-math -lvart-util -lxir -lopencv_core -lopencv_video -lopencv_videoio -lopencv_imgproc -lopencv_imgcodecs -lopencv_highgui -lglog -pthread
